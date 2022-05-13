@@ -9,8 +9,8 @@ Debes crear un buscador de países consultando el [siguiente grafo](https://coun
 
 Se espera que logres hacer una aplicación parecida a la del siguiente diagrama:
 
-![image1](imgs/1.png)
-![image2](imgs/2.png)
+![image1](src/assets/imgs/1.png)
+![image2](src/assets/imgs/2.png)
 
 La funcionalidad y estructura debe ser igual, pero el diseño y variantes (por ejemplo, cambiar colores de las cosas) queda a tu gusto. **Considerar que el ícono al lado del nombre de cada país es el emoji**.
 
