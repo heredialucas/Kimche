@@ -16,10 +16,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "eslint . --fix",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install",
-    "lint": "eslint . --fix"
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": "react-app"
