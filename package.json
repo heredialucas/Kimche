@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^14.2.0",
     "apollo-boost": "^0.4.9",
     "graphql": "^16.5.0",
-    "prettier": "^2.6.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1"
@@ -45,10 +44,12 @@
     "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.29.4",
+    "prettier": "^2.6.2",
     "husky": "^8.0.1",
     "lint-staged": "^12.4.1"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
