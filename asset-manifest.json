@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Kimche/static/css/main.8928063e.css",
+    "main.js": "/Kimche/static/js/main.b86c4722.js",
+    "index.html": "/Kimche/index.html",
+    "main.8928063e.css.map": "/Kimche/static/css/main.8928063e.css.map",
+    "main.b86c4722.js.map": "/Kimche/static/js/main.b86c4722.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8928063e.css",
+    "static/js/main.b86c4722.js"
+  ]
+}
