@@ -1,23 +1,41 @@
+@import '../../config/colors/colors.scss';
 .container{
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
     .label{
         margin: .8rem;
     }
     .containerInput{
         position: relative;
+        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         .input{
-            width: 100%;
-            height: 1.4rem;
+            width:25%;
+            height: 1.8rem;
+            border: 2px solid $colorOrange;
             border-radius: 15px;
-            background-color: rgb(186, 185, 185);
+            background-color: $colorWhite;
             padding-left: 2rem;
+            font-size: 15px;
+            transition: .5s;
+            color: $colorBlue;
+        }
+        .input:focus{
+            transition: .5s;
+            border: 2px solid $colorOrange;
+            background-color: $colorWhite;; 
+            width: 60%;  
+            box-shadow: 0 0 5px 1px $colorOrange;
+            outline: none;
         }
         .icon{
             width: 1rem;
+            color: $colorOrange;
             margin-left: .5rem;
             position: absolute;
         }

@@ -1,6 +1,6 @@
 import style from './GroupCountries.module.scss'
 
-const GroupCountries = ({ setGroupBy }) => {
+const GroupCountries = ({ setGroupBy, groupBy }) => {
 	function setContinent() {
 		setGroupBy('continent')
 	}
@@ -8,14 +8,35 @@ const GroupCountries = ({ setGroupBy }) => {
 	function setLanguage() {
 		setGroupBy('language')
 	}
+	function setClear() {
+		setGroupBy('')
+	}
 	return (
 		<div className={style.container}>
 			<h2>Group by</h2>
-			<button contain={'Continent'} size={'large'} onClick={setContinent}>
+			<button
+				className={groupBy === 'continent' ? style.btnOn : style.btnOff}
+				contain={'Continent'}
+				size={'large'}
+				onClick={setContinent}
+			>
 				Continent
 			</button>
-			<button contain={'Continent'} size={'large'} onClick={setLanguage}>
+			<button
+				className={groupBy === 'language' ? style.btnOn : style.btnOff}
+				contain={'Continent'}
+				size={'large'}
+				onClick={setLanguage}
+			>
 				Language
+			</button>
+			<button
+				className={groupBy === '' ? style.btnOn : style.btnOff}
+				contain={'Clear'}
+				size={'large'}
+				onClick={setClear}
+			>
+				Clear
 			</button>
 		</div>
 	)

@@ -1,3 +1,4 @@
+import style from './Detail.module.scss'
 import Loading from '../../components/Loading/Loading'
 import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
@@ -7,6 +8,7 @@ const Detail = () => {
 
 	// POSIBLE CUSTOM HOOK
 	const [detail, setDetail] = useState(null)
+	console.log(detail)
 	const { findCountry, result } = useFindCountry()
 
 	useEffect(() => {
@@ -24,41 +26,49 @@ const Detail = () => {
 	return (
 		<>
 			{detail ? (
-				<div>
+				<div className={style.container}>
 					<h1>{detail.name}</h1>
-					<div>
-						<h2>Capital:</h2>
-						<span>{detail.capital}</span>
+					<div className={style.containerItems}>
+						<div>
+							<h2>Capital:</h2>
+							<span>{detail.capital}</span>
+						</div>
+						<div>
+							<h2>Moneda:</h2>
+							<span>{detail.currency}</span>
+						</div>
+						<div>
+							<h2>Continent:</h2>
+							<span>{detail.continent.name}</span>
+						</div>
+						<div>
+							<h2>Lenguajes:</h2>
+							<ul>
+								{detail.languages.map((language) => (
+									<li key={language.name}>{language.name}</li>
+								))}
+							</ul>
+						</div>
 					</div>
-					<div>
-						<h2>Moneda:</h2>
-						<span>{detail.currency}</span>
-					</div>
-					<div>
-						<h2>Continent:</h2>
-						<span>{detail.continent.name}</span>
-					</div>
-					<div>
-						<h2>Lenguajes:</h2>
+					<div className={style.containerStates}>
+						<h2>States:</h2>
 						<ul>
-							{detail.languages.map((language) => (
-								<li key={language.name}>{language.name}</li>
+							{detail.states.map((state, index) => (
+								<li key={index}>
+									{state.name}
+									<br />
+								</li>
 							))}
+							{detail.states.length === 0 && <li>No states</li>}
 						</ul>
 					</div>
-					<div>
-						<h2>States:</h2>
-						<span>
-							{detail.states.map((state, index) => (
-								<span key={index}>{state.name}</span>
-							))}
-						</span>
-					</div>
+					<Link className={style.btn} to="/">
+						Back
+					</Link>
 				</div>
 			) : (
 				<Loading />
 			)}
-			<Link to="/">Back</Link>
 		</>
 	)
 }
