@@ -2,6 +2,8 @@ import Cards from '../Cards/Cards'
 import { groupByContinent } from '../../helpers/groupBy/groupByContinent'
 import { groupByLanguage } from '../../helpers/groupBy/groupByLanguage'
 
+import style from './Pagination.module.scss'
+
 import { useState } from 'react'
 
 export default function Pagination({ data, filterCountries, groupBy }) {
@@ -26,7 +28,7 @@ export default function Pagination({ data, filterCountries, groupBy }) {
 	const allCountries = filterCountries.length > 0 ? filterCountries : data
 
 	return (
-		<>
+		<div className={style.container}>
 			{filterCountries.length === 0 ? (
 				<h3>You must search a valid country</h3>
 			) : (
@@ -39,6 +41,6 @@ export default function Pagination({ data, filterCountries, groupBy }) {
 					groupBy={groupBy}
 				/>
 			)}
-		</>
+		</div>
 	)
 }

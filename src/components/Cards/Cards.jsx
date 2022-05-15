@@ -23,11 +23,13 @@ const Cards = ({
 			<div className={style.containerPagination}>
 				{pagesNumber.map((value, index) => {
 					return (
-						<div onClick={() => onPage(value)} className="btn" key={index}>
-							<button className="button" onClick={() => onPage(value)}>
-								{value}
-							</button>
-						</div>
+						<button
+							key={index}
+							className="button"
+							onClick={() => onPage(value)}
+						>
+							{value}
+						</button>
 					)
 				})}
 			</div>
@@ -36,7 +38,9 @@ const Cards = ({
 					? groupCountries.map((groupCountry, index) => {
 							return (
 								<div className={style.containerGroup} key={index}>
-									<h2>{groupCountry[0]}</h2>
+									<h2 className={style.h2Group}>
+										{groupCountry[0] || 'Not Found'}
+									</h2>
 									{groupCountry[1]?.map((country) => {
 										return <Card key={country.code} country={country} />
 									})}

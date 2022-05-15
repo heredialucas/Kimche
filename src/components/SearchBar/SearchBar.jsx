@@ -32,7 +32,7 @@ const Search = ({ children, type, data, loading }) => {
 					<input className={style.input} type={type} onChange={handleInput} />
 				</div>
 			</div>
-			<GroupCountries setGroupBy={setGroupBy} />
+			<GroupCountries groupBy={groupBy} setGroupBy={setGroupBy} />
 			{loading ? (
 				<Loading />
 			) : (

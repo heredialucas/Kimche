@@ -1,3 +1,4 @@
+@import '../../config/colors/colors.scss';
 .container {
     position: relative;
     margin: 100px 50% 100px 50% ;
@@ -6,7 +7,7 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      box-shadow: 0 4px 0 rgb(154, 155, 153);
+      box-shadow: 0 4px 0 $colorOrange;
       background: transparent;
       animation: Animate 1s linear infinite;
     }
@@ -15,7 +16,7 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      color: rgb(80, 81, 80);
+      color: $colorBlue;
   
       position: absolute;
       top: 0;
@@ -24,7 +25,7 @@
       line-height: 150px;
       font-size: 2em;
       background: transparent;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 5px $colorLightBlue;
     }
   }
   

@@ -21,7 +21,7 @@ const Card = ({ country }) => {
 					))}
 				</div>
 				<Link className={style.btn} to={`/detail/${country.code}`}>
-					<button>See more</button>
+					See more
 				</Link>
 			</div>
 		</div>
