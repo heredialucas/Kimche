@@ -1,0 +1,23 @@
+.containerPagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    div{
+        margin: 5px;
+    }
+}
+.containerGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    div{
+        margin: 5px;
+    }    
+}
+.containerCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
