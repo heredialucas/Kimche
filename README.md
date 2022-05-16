@@ -3,9 +3,24 @@
 Nombre postulante: [Heredia Lucas Francisco]
 Link a la app en producción: [https://heredialucas.github.io/Kimche/]
 
+## Desarrollo
+
+Tomé la desición de usar npm antes de yarn, porque quería desarrollar lo más rápido posible y no quería que mi costumbre de usar npm tenga interferencia en el proyecto creado con yarn
+<br/>
+Actualicé todas las dependencias a sus ultimas versiones, solucionando los conflictos y cambiando los métodos antiguos a los modernos, ya que me pareció la forma correcta de encarar el desafío
+<br/>
+El proyecto es totalmente responsive y tiene un diseño propio y buscando un estilo moderno y liviano
+<br/>
+Usé scss module por encima de style components ya que me pareció la forma más rápida de desarrollar la app, al tener mucha más práctica en la misma
+<br/>
+Me tomé la libertad de agregar una página de detalle y también la de limpiar el agrupamiento seleccionado (Clear)
+
+PD: Espero sea de du agrado! Un abrazo a todos! Graciiaaaas!!
+
 ## Respuesta:
 
 En el caso que para la empresa sea totalmente necesario mantenerse en una estructura de peticiones SQL, buscaría mejorarla a travéz de un servicio distribuido en la nube, como por ejemplo https://www.cockroachlabs.com/
+<br/>
 Y en el caso que estén dispuestos a migrar de tecnología, buscaría mejorar el rendimiento a travéz de peticiones NoSql, como por ejemplo con https://www.mongodb.com/es , ya que está pensada para cantidades abundantes de datos y de mejoras en rendimiento.
 
 ## Instrucciones
