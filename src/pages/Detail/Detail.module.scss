@@ -12,6 +12,24 @@
   color: $colorBlue;
   border: 2px solid $colorBlue;
   border-radius: 15px;
+  .blobOne{
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 600px;
+    animation: traslateOne 8s infinite;
+    z-index: -1;
+  }
+  .blobTwo{
+    opacity: .5;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    animation: traslateTwo 5s infinite;
+    z-index: -1;
+}
 
   h1 {
     padding: 0 50px;
@@ -50,4 +68,41 @@
     background-color: $colorOrange;
     color: $colorWhite;
   }
+}
+
+
+@keyframes traslateOne {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(40%);
+  }
+  100% {
+      transform: translateY(0);
+  }      
+}
+@keyframes traslateTwo {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-60%);
+  }
+  100% {
+      transform: translateY(0);
+  }   
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: 50px auto;
+    .containerItems{
+      flex-direction: column;
+    }
+    .btn{
+      position: relative;
+    }
+  } 
 }

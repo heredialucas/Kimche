@@ -1,5 +1,6 @@
 import style from './Detail.module.scss'
 import Loading from '../../components/Loading/Loading'
+import Blob from '../../assets/imgs/blob.svg'
 import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { useFindCountry } from '../../graphql/findCountry/useFindCountry'
@@ -27,6 +28,8 @@ const Detail = () => {
 		<>
 			{detail ? (
 				<div className={style.container}>
+					<img className={style.blobOne} src={Blob} alt="Blob" />
+					<img className={style.blobTwo} src={Blob} alt="Blob" />
 					<h1>{detail.name}</h1>
 					<div className={style.containerItems}>
 						<div>
