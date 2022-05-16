@@ -1,47 +1,55 @@
-@import '../../config/colors/colors.scss';
-.container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    h2{
-        color: $colorBlue;
-        font-size: xx-large;
-        font-weight: 800;
-    }
-    .btnOn{
-        background-color: $colorOrange;
-        font-size: 17px;
-        color: $colorWhite;
-        border: 2px solid $colorOrange;
-        border-radius: 15px;
-        box-shadow: 0 0 3px 2px $colorOrange;
-        padding: 7px;
-        transition: .2s;
-    }
-    .btnOff{
-        background-color: $colorWhite;
-        font-size: 17px;
-        color: $colorOrange;
-        border: 2px solid $colorOrange;
-        border-radius: 15px;
-        padding: 7px;
-        transition: .2s;
-    }
-    .btnOn:hover{
-        cursor: pointer;
-        background-color: $colorOrange;
-        color: $colorWhite;
-    }
-    .btnOn:active{
-        transform: scale(.95);
-    }
-    .btnOff:hover{
-        cursor: pointer;
-        background-color: $colorOrange;
-        color: $colorWhite;
-    }
-    .btnOff:active{
-        transition: .2s;
-        transform: scale(.95);
-    }
+@import "../../config/colors/colors.scss";
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  h2 {
+    color: $colorBlue;
+    font-size: xx-large;
+    font-weight: 800;
+  }
+
+  .btnOn {
+    background-color: $colorOrange;
+    font-size: 17px;
+    color: $colorWhite;
+    border: 2px solid $colorOrange;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 2px $colorOrange;
+    padding: 7px;
+    transition: 0.2s;
+  }
+
+  .btnOff {
+    background-color: $colorWhite;
+    font-size: 17px;
+    color: $colorOrange;
+    border: 2px solid $colorOrange;
+    border-radius: 15px;
+    padding: 7px;
+    transition: 0.2s;
+  }
+
+  .btnOn:hover {
+    cursor: pointer;
+    background-color: $colorOrange;
+    color: $colorWhite;
+  }
+
+  .btnOn:active {
+    transform: scale(0.95);
+  }
+
+  .btnOff:hover {
+    cursor: pointer;
+    background-color: $colorOrange;
+    color: $colorWhite;
+  }
+
+  .btnOff:active {
+    transition: 0.2s;
+    transform: scale(0.95);
+  }
 }

@@ -1,26 +1,29 @@
-@import '../../config/colors/colors.scss';
+@import "../../config/colors/colors.scss";
 
-.small{
-    font-size: 0.8rem;
-    margin: 10px;
-    font-weight: 300;
-    color: $colorBlue;
+.small {
+  font-size: 0.8rem;
+  margin: 10px;
+  font-weight: 300;
+  color: $colorBlue;
 }
-.medium{
-    margin: 10px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: $colorBlue;
+
+.medium {
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: $colorBlue;
 }
-.large{
-    margin: 10px;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: $colorBlue;
+
+.large {
+  margin: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $colorBlue;
 }
-.extralarge{
-    margin: 10px;
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: $colorBlue;
+
+.extralarge {
+  margin: 10px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: $colorBlue;
 }
