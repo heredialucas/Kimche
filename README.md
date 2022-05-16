@@ -1,7 +1,12 @@
 # Desafío para Software Engineers
 
 Nombre postulante: [Heredia Lucas Francisco]
-Link a la app en producción: [LINK DEL DEPLOY]
+Link a la app en producción: [https://heredialucas.github.io/Kimche/]
+
+## Respuesta:
+
+En el caso que para la empresa sea totalmente necesario mantenerse en una estructura de peticiones SQL, buscaría mejorarla a travéz de un servicio distribuido en la nube, como por ejemplo https://www.cockroachlabs.com/
+Y en el caso que estén dispuestos a migrar de tecnología, buscaría mejorar el rendimiento a travéz de peticiones NoSql, como por ejemplo con https://www.mongodb.com/es , ya que está pensada para cantidades abundantes de datos y de mejoras en rendimiento.
 
 ## Instrucciones
 
