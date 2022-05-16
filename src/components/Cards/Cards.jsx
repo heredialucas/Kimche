@@ -1,6 +1,8 @@
 import style from './Cards.module.scss'
 import Card from '../Card/Card'
 
+import { filterLanguages } from '../../helpers/functions/filterLanguages'
+
 const Cards = ({
 	countries,
 	setPage,
@@ -8,6 +10,7 @@ const Cards = ({
 	data,
 	groupCountries,
 }) => {
+	filterLanguages(groupCountries)
 	// SACAR AFUERA
 	const countriesLength = data?.length
 	const pagesNumber = []
