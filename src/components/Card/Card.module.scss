@@ -1,112 +1,127 @@
-@import '../../config/colors/colors.scss';
+@import "../../config/colors/colors.scss";
 
-.container:nth-child(odd){
+.container:nth-child(odd) {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  border: 1px solid $colorBlue;
+  box-shadow: 0 0 3px 1px $colorBlue;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px;
+
+  .leftContainer {
+    color: $colorBlue;
+    width: 30%;
+    border-right: 1px solid $colorBlue;
+  }
+
+  .rightContainer {
+    color: $colorBlue;
+    width: 70%;
+    height: 100%;
+    padding: 10px;
     display: flex;
-    width: 300px;
-    height: 200px;
-    border: 1px solid $colorBlue;
-    box-shadow: 0 0 3px 1px $colorBlue;
-    padding: 15px;
-    border-radius: 15px;
-    margin: 10px;
-    .leftContainer{
-        color: $colorBlue;
-        width: 30%;
-        border-right: 1px solid $colorBlue;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h4 {
+      font-size: 12px;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
     }
-    .rightContainer{
-        color: $colorBlue;
-        width: 70%;
-        height: 100%;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        h4{
-            font-size: 12px;
-            font-weight: bold;
-            margin: 0;
-            padding: 0;
-        }
-        span{
-            font-size: 12px;
-            font-weight: normal;
-            margin: 0 0 0 5px;
-            padding: 0;
-        }
-        h2{
-            margin: 0 0 0 15px;
-            padding: 0;
-        }
-        .btn{
-            background: $colorWhite;
-            color: $colorBlue;
-            font-size: 14px;
-            font-weight: bold;
-            border: 1px solid $colorBlue;
-            padding: 3px 7px;
-            border-radius: 10px;
-            text-decoration: none;
-            align-self: flex-end;
-        }
-        .btn:hover{
-            background: $colorBlue;
-            color: $colorWhite;
-        }
+
+    span {
+      font-size: 12px;
+      font-weight: normal;
+      margin: 0 0 0 5px;
+      padding: 0;
     }
+
+    h2 {
+      margin: 0 0 0 15px;
+      padding: 0;
+    }
+
+    .btn {
+      background: $colorWhite;
+      color: $colorBlue;
+      font-size: 14px;
+      font-weight: bold;
+      border: 1px solid $colorBlue;
+      padding: 3px 7px;
+      border-radius: 10px;
+      text-decoration: none;
+      align-self: flex-end;
+    }
+
+    .btn:hover {
+      background: $colorBlue;
+      color: $colorWhite;
+    }
+  }
 }
-.container:nth-child(even){
+
+.container:nth-child(even) {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  border: 1px solid $colorOrange;
+  box-shadow: 0 0 3px 1px $colorOrange;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px;
+
+  .leftContainer {
+    color: $colorOrange;
+    width: 30%;
+    border-right: 1px solid $colorOrange;
+  }
+
+  .rightContainer {
+    color: $colorOrange;
+    width: 70%;
+    height: 100%;
+    padding: 10px;
     display: flex;
-    width: 300px;
-    height: 200px;
-    border: 1px solid $colorOrange;
-    box-shadow: 0 0 3px 1px $colorOrange;
-    padding: 15px;
-    border-radius: 15px;
-    margin: 10px;
-    .leftContainer{
-        color: $colorOrange;
-        width: 30%;
-        border-right: 1px solid $colorOrange;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h4 {
+      font-size: 12px;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
     }
-    .rightContainer{
-        color: $colorOrange;
-        width: 70%;
-        height: 100%;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        h4{
-            font-size: 12px;
-            font-weight: bold;
-            margin: 0;
-            padding: 0;
-        }
-        span{
-            font-size: 12px;
-            font-weight: normal;
-            margin: 0 0 0 5px;
-            padding: 0;
-        }
-        h2{
-            margin: 0 0 0 15px;
-            padding: 0;
-        }
-        .btn{
-            background: $colorWhite;
-            color: $colorOrange;
-            font-size: 14px;
-            font-weight: bold;
-            border: 1px solid $colorOrange;
-            padding: 3px 7px;
-            border-radius: 10px;
-            text-decoration: none;
-            align-self: flex-end;
-        }
-        .btn:hover{
-            background: $colorOrange;
-            color: $colorWhite;
-        }
+
+    span {
+      font-size: 12px;
+      font-weight: normal;
+      margin: 0 0 0 5px;
+      padding: 0;
     }
+
+    h2 {
+      margin: 0 0 0 15px;
+      padding: 0;
+    }
+
+    .btn {
+      background: $colorWhite;
+      color: $colorOrange;
+      font-size: 14px;
+      font-weight: bold;
+      border: 1px solid $colorOrange;
+      padding: 3px 7px;
+      border-radius: 10px;
+      text-decoration: none;
+      align-self: flex-end;
+    }
+
+    .btn:hover {
+      background: $colorOrange;
+      color: $colorWhite;
+    }
+  }
 }

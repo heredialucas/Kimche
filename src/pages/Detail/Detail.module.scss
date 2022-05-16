@@ -1,47 +1,53 @@
-@import '../../config/colors/colors.scss';
+@import "../../config/colors/colors.scss";
 
-.container{
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  width: 50%;
+  margin: 50px auto;
+  padding: 10px;
+  color: $colorBlue;
+  border: 2px solid $colorBlue;
+  border-radius: 15px;
+
+  h1 {
+    padding: 0 50px;
+  }
+
+  .containerItems {
     display: flex;
-    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    div {
+      margin: 10px;
+    }
+  }
+
+  .containerStates {
+    display: flex;
     flex-direction: column;
-    justify-self: center;
-    align-self: center;
-    width: 50%;
-    margin: 50px auto;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    align-self: flex-end;
+    font-size: 30px;
+    border: 2px solid $colorOrange;
+    border-radius: 50%;
     padding: 10px;
-    color: $colorBlue;
-    border: 2px solid $colorBlue;
-    border-radius: 15px;
-    h1{
-        padding: 0 50px;
-    }
-    .containerItems{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        div{
-            margin: 10px;
-        }
-    }
-    .containerStates{
-        display: flex;
-        flex-direction: column;
-    }
-    .btn{
-        position: absolute;
-        bottom: 0;
-        text-decoration: none;
-        align-self: flex-end;
-        font-size: 30px;
-        border: 2px solid $colorOrange;
-        border-radius: 50%;
-        padding: 10px;
-        margin: 30px;
-        color: $colorOrange;
-        font-weight: bold;
-    }
-    .btn:hover{
-        background-color: $colorOrange;
-        color: $colorWhite;
-    }
+    margin: 30px;
+    color: $colorOrange;
+    font-weight: bold;
+  }
+
+  .btn:hover {
+    background-color: $colorOrange;
+    color: $colorWhite;
+  }
 }

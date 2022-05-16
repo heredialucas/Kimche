@@ -1,61 +1,64 @@
-@import '../../config/colors/colors.scss';
-.containerPagination{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-   
-        button{
-            padding: 5px 10px;
-            margin: 5px;
-            border: 1.5px solid $colorBlue;
-            border-radius: 50%;
-            color: $colorBlue;
-            background-color: $colorWhite;
-            transition: .2s;
-        }
-        button:hover{
-            background-color: $colorBlue;
-            color: $colorWhite;
-            cursor: pointer;
-            transition: .2s;
-        }
-        button:active{
-            transform: scale(.90);
-            transition: .2s;
-        }
-        button:focus{
-            outline: none;
-            background-color: $colorBlue;
-            color: $colorWhite;
-            cursor: pointer;
-            transition: .2s;
-        }
-    
+@import "../../config/colors/colors.scss";
+
+.containerPagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+  button {
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1.5px solid $colorBlue;
+    border-radius: 50%;
+    color: $colorBlue;
+    background-color: $colorWhite;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background-color: $colorBlue;
+    color: $colorWhite;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  button:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+  }
+
+  button:focus {
+    outline: none;
+    background-color: $colorBlue;
+    color: $colorWhite;
+    cursor: pointer;
+    transition: 0.2s;
+  }
 }
 
+.containerCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-.containerCards{
-    display:flex;
+  .containerGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+
+    .h2Group:nth-child(odd) {
+      color: $colorBlue;
+      font-size: xx-large;
+      font-weight: 800;
+    }
+  }
+
+  .containerCards {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    .containerGroup{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 20px;
-        .h2Group:nth-child(odd){
-            color: $colorBlue;
-            font-size: xx-large;
-            font-weight: 800;
-        }    
-    }
-    
-    .containerCards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
+  }
 }
