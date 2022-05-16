@@ -2,27 +2,11 @@ import style from './Detail.module.scss'
 import Loading from '../../components/Loading/Loading'
 import Blob from '../../assets/imgs/blob.svg'
 import { Link, useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 import { useFindCountry } from '../../graphql/findCountry/useFindCountry'
 const Detail = () => {
 	const { code } = useParams()
 
-	// POSIBLE CUSTOM HOOK
-	const [detail, setDetail] = useState(null)
-	console.log(detail)
-	const { findCountry, result } = useFindCountry()
-
-	useEffect(() => {
-		if (code && findCountry) {
-			findCountry({ variables: { code } })
-		}
-	}, [code, findCountry])
-
-	useEffect(() => {
-		if (result.data) {
-			setDetail(result.data.country)
-		}
-	}, [result])
+	const detail = useFindCountry(code)
 
 	return (
 		<>
